@@ -4,7 +4,7 @@ pipeline {
    stages {
 	  stage('CompileandPackage') {
          steps {
-			    git 'https://gitlab.com/vishnukiranreddy4/spring-project.git'
+			    git 'https://github.com/deepaannie466/spring-project.git'
 			    sh label: '', script: 'mvn clean package'
 			    echo "${BUILD_URL}"
          }
